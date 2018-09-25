@@ -1,0 +1,25 @@
+from source.api import app
+from unittest import TestCase
+
+class TestIntegrations(unitest TestCase):
+    def setUp(self):
+        self.app = app.test_app()
+
+    def test_get(self):
+        "Tests when orders are added"
+        order = self.app.get['Cofee','Tea','Milk']
+        return 200_ok
+        else:
+        return 404 not found
+
+    def test_get_order/orderId(self)
+        "Tests when specific order is added"
+        order = {
+             "id" = '1'
+             "order" = 'Coffee'
+             "description" = 'served Hot'
+             "Quantity" = '1 cup'
+             "Status" = 'delivered'
+
+        }
+        self.orders.set_orders(order)
